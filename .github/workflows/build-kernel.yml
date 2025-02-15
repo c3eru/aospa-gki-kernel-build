@@ -19,9 +19,9 @@ jobs:
           sudo chmod a+rx /usr/local/bin/repo
       - name: Clone repo and sync
         run: |
-          repo init -u https://github.com/bryanyee33/kernel_manifest -b uvite-xiaomi-sm8450 --depth=1
+          repo init -u https://c3eru/clo_kernel_manifest -b guide --depth=1
           repo sync
-          mkdir -p kernel_platform/device/xiaomi/marble-kernel/dtbs
+      #  mkdir -p kernel_platform/device/xiaomi/marble-kernel/dtbs
       - name: Include KSU
         run: |
           cd kernel_platform/xiaomi/sm8450
